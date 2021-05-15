@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+     <h1 class="head">freecodecamp Survey Form</h1>
+     <p class="par">Thank you for taking the time to help us improve the platform</p>
+     <div class="pad" style="opacity: 1;">
+     <form class="text">
+        <h4>Name</h4>
+         <input type="text" placeholder=" enter your name" class="box" required>
+         <h4 class="marg">Email</h4>
+         <input type="email" placeholder="enter your email" class="box" required>
+         <h4 class="marg">Age</h4>
+         <input type="number" placeholder="enter your age" class="box" required><br>
+         <br>
+         <label for="career" style="margin-top: 20px;"><b>What option describes your current role?</b></label>
+         <select class="box" id="career" required>
+            <option value="" disabled selected>Choose your current role</option>
+            <option value="student">student</option>
+            <option value="full time">full time </option>
+            <option value="part time">part time</option>
+            <option value="other">other</option>
+         </select>
+        <h4 style="margin-bottom: 10px; margin-top: 30px;">Would you recomnd freecodecamp to your friend</h4>
+        <label>
+            <input type="radio" name="rating" style="margin-bottom: 10px;" checked>Definetly<br>
+            <input type="radio" name="rating" style="margin-bottom: 10px;">maybe<br>
+            <input type="radio" name="rating">no<br>
+        </label>
+        <br>
+        <label for="career" style="margin-top: 20px;"><b>What is your favorite feature of codecamp?</b></label>
+        <select class="box" id="career" required>
+           <option value="" disabled selected>select an option</option>
+           <option value="challenges">challenges</option>
+           <option value="projects">projects</option>
+           <option value="community">community</option>
+           <option value="open source">open source</option>
+        </select>
+        <h4 style="margin-bottom: 10px; margin-top: 30px;">Would you like improved(check all that apply)</h4>
+        <label>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">front-end projects<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">back-end projects<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">data visualisation<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">challenges<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">open source community<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">gitter help rooms<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">videos<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">city meetups<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">wiki<br>
+            <input type="checkbox" name="rating" style="margin-bottom: 10px;">forum<br>
+            <input type="checkbox" name="rating">additional courses<br>
+        </label>
+        <h4 style="margin-top: 30px;">Any comments or suggestions</h4>
+        <textarea rows="6" cols="50" class="box2">enter your comments here</textarea>
+    <button type="submit" class="sub">submit</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
