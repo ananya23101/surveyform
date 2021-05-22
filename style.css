@@ -10,6 +10,8 @@
     background-size: cover;
     position: relative;
     overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .head{
    color: rgb(255, 255, 255);
@@ -39,17 +41,18 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: auto;
+    z-index: 2;
 }
 .text{
     color: rgb(255, 255, 255);
     font-size: 20px;
-   margin-left: 70px;
+   margin-left: 90px;
    position: relative;
-   z-index: auto;
+   z-index: 2;
+   margin-right: -50px;
 }
 .box{
-    width: 16cm;
+    width: 80%;
     height: 0.8cm;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 2px;
@@ -59,25 +62,40 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: auto;
+    z-index: 2;
 }
 .marg{
     margin-top: 30px;
 }
 .box2{
     margin-top: 20px;
-    width: 16cm;
+    width: 80%;
     height: 3cm;  
     max-height: 5cm;
 }
 .sub{
-    margin-left: 5px;
     margin-top: 20px;
-    width: 16cm;
+    margin-bottom: 20px;
+    width: 80%;
     height: 1cm; 
     background-color: green;
     border-radius: 5px;
     border-color: green;
     box-shadow: none;
 }  
-
+@media screen and (max-width: 650px) {
+    .back{
+        width: 100%;
+        height: fit-content;
+    }
+    .pad{
+        width: 80%;
+    }
+    .sub{
+        margin-top: 5px;
+    }
+    .text{
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+}
