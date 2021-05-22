@@ -92,7 +92,8 @@
     }
     .pad{
         width: 80%;
-        overflow-y: visible;
+        overflow-y: hidden;
+        height: 100%;
     }
     .sub{
         margin-top: 5px;
